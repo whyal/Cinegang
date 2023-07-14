@@ -11,7 +11,7 @@ const About = () => {
           A compilation of our best works.
         </h3>
         <video
-          src="/videos/portfolio-video.mp4"
+          src="https://whyal.github.io/Cinegang/videos/portfolio-video.mp4"
           type="video/mp4"
           className="w-11/12 border-2 border-[#ff4343] lg:w-3/4 xl:max-w-screen-2xl"
         ></video>
@@ -41,128 +41,146 @@ const About = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3">
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
             <Image
-              src="/images/portfolio-img1.jpg"
+              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
               fill
               className="object-cover"
+              alt="portfolioImg"
             />
           </div>
         </div>

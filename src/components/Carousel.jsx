@@ -50,7 +50,7 @@ const Carousel = ({ descriptions, small }) => {
           onClick={scrollPrev}
         >
           <Image
-            src="/icons/chevron-left-solid.svg"
+            src="https://whyal.github.io/Cinegang/icons/chevron-left-solid.svg"
             fill
             className="object-contain"
           />
@@ -61,7 +61,7 @@ const Carousel = ({ descriptions, small }) => {
           onClick={scrollNext}
         >
           <Image
-            src="/icons/chevron-right-solid.svg"
+            src="https://whyal.github.io/Cinegang/icons/chevron-right-solid.svg"
             fill
             className="object-contain"
           />

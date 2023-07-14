@@ -9,7 +9,7 @@ const Clients = () => {
       <div className="grid grid-cols-2 p-4 md:grid-cols-3 lg:grid-cols-5 justify-items-center gap-3 md:gap-4 text-4xl xl:max-w-screen-2xl">
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="../public/icons/clients/samsung.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/samsung.svg"
             fill
             className="object-contain"
           />
@@ -17,35 +17,35 @@ const Clients = () => {
 
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/air-asia.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/air-asia.svg"
             fill
             className="object-contain"
           />
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/klook.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/klook.svg"
             fill
             className="object-contain"
           />
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/sony.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/sony.svg"
             fill
             className="object-contain"
           />
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/lenovo.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/lenovo.svg"
             fill
             className="object-contain"
           />
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/cathay-photos.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/cathay-photos.svg"
             fill
             className="object-contain"
           />
@@ -55,21 +55,21 @@ const Clients = () => {
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/asics.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/asics.svg"
             fill
             className="object-contain"
           />
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/guinness.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/guinness.svg"
             fill
             className="object-contain"
           />
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/subway.svg"
+            src="https://whyal.github.io/Cinegang/icons/clients/subway.svg"
             fill
             className="object-contain"
           />

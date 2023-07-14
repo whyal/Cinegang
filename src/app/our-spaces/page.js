@@ -46,7 +46,7 @@ const OurSpaces = () => {
 
   return (
     <div className="w-full mb-24">
-      <div className="w-full bg-[url('/images/our-spaces-hero.png')] bg-cover aspect-video flex flex-col items-center justify-center max-h-[1080px] gap-4 lg:gap-6">
+      <div className="w-full bg-[url('https://whyal.github.io/Cinegang/images/our-spaces-hero.png')] bg-cover aspect-video flex flex-col items-center justify-center max-h-[1080px] gap-4 lg:gap-6">
         <h1 className="text-4xl font-bold lg:text-6xl">
           Our <span className="text-[#ff4343]">Spaces</span>
         </h1>
