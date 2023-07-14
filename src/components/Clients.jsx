@@ -51,7 +51,7 @@ const Clients = () => {
           />
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
-          <Image src="/icons/clients/dbs.svg" fill className="object-contain" />
+          <Image src="https://whyal.github.io/Cinegang/icons/Corporate.svg/icons/clients/dbs.svg" fill className="object-contain" />
         </div>
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
