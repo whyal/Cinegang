@@ -9,7 +9,7 @@ const Clients = () => {
       <div className="grid grid-cols-2 p-4 md:grid-cols-3 lg:grid-cols-5 justify-items-center gap-3 md:gap-4 text-4xl xl:max-w-screen-2xl">
         <div className="relative w-[100px] h-[50px] md:w-[120px] md:[70px] lg:w-[200px] lg:h-[150px]">
           <Image
-            src="/icons/clients/samsung.svg"
+            src="../public/icons/clients/samsung.svg"
             fill
             className="object-contain"
           />
