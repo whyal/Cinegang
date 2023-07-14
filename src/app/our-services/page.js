@@ -39,7 +39,7 @@ const OurServices = () => {
               desc="Brief, persuasive messages designed to promote brands, production or services through impactful storytelling and engaging visuals."
             />
             <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/Corporate.svg"
+              imageUrl="https://whyal.github.io/Cinegang/icons/Corporates.svg"
               heading="Corporate"
               desc="Professional audiovisual presentations for businesses, delivering brand messages, showcasing products, and enhancing communication."
             />
