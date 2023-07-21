@@ -46,7 +46,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen lg:h-[1080px] bg-[url('/images/contactHero.jpg')] bg-no-repeat bg-center bg-cover gap-8">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen lg:h-[1080px] bg-[url('https://whyal.github.io/Cinegang/images/contactHero.jpg')] bg-no-repeat bg-center bg-cover gap-8">
       <div className="flex flex-col items-center max-w-[2560px]">
         <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold">
           Contact <span className="text-[#ff4343]">Us</span>
