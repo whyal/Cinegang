@@ -7,8 +7,8 @@ const Staff = ({ Title, Name, Caption, ExtraCaption = null }) => {
         <Image src={`https://whyal.github.io/Cinegang/images/staffs/${Name}.png`} alt={Name} width={200} height={200} />
       </div>
       <p className="text-2xl">{Title}</p>
-      <q className="text-lg text-center">{Caption}</q>
-      {ExtraCaption && <span className="text-xs">{ExtraCaption}</span>}
+      <q className="text-md text-center">{Caption}</q>
+      {ExtraCaption && <span className="text-[8px]">{ExtraCaption}</span>}
     </div>
   );
 };

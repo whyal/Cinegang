@@ -17,6 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="https://whyal.github.io/Cinegang/icons/cineganglogo.svg"
+        />
+      </head>
       <body
         className={`bg-primary text-[#ffffff] min-h-screen flex flex-col overflow-x-hidden ${myFont.className}`}
       >
