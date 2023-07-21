@@ -3,9 +3,60 @@ import Snippets from "@/components/Services-Snippets";
 import Link from "next/link";
 
 const OurServices = () => {
+  const videoProduction = [
+    {
+      Heading: "TVC",
+      Description:
+        "Brief, persuasive messages designed to promote brands, production or services through impactful storytelling and engaging visuals.",
+    },
+    {
+      Heading: "Corporate",
+      Description:
+        "Professional audiovisual presentations for businesses, delivering brand messages, showcasing products, and enhancing communication.",
+    },
+    {
+      Heading: "Events",
+      Description:
+        "Capturing and documenting live events through video, preserving the essence, highlights, and key moments for future viewing and distribution.",
+    },
+    {
+      Heading: "Editing",
+      Description:
+        "Assembly and manipulation of video footage, audio, and visual elements to create a compelling final product for storytelling, entertainment, or promotional content.",
+    },
+    {
+      Heading: "2D",
+      Description:
+        "Create visually engaging illustrations and animations using 2D mediums, perfect for bringing your infographics and mixed media ideas to life!",
+    },
+    {
+      Heading: "3D",
+      Description:
+        "Create immersive and lifelike visual experiences through the crafting of 3D objects, characters, and environments using digital tools and techniques.",
+    },
+  ];
+
+  const photography = [
+    {
+      Heading: "Product",
+      Description:
+        "Showcase your products in their finest form through expertly crafted images, capturing attention and inspiring desire.",
+    },
+    {
+      Heading: "Portrait",
+      Description:
+        "Let us capture your unique personality, expressions, and emotions in visually striking and meaningful photographs.",
+    },
+    {
+      Heading: "Events",
+      Description:
+        "Preserve cherished moments of special occasions like weddings, parties and corporate events with our exceptional photography.",
+    },
+  ];
+
   return (
     <div className="w-full mb-24">
-      <div className="w-full bg-[url('https://whyal.github.io/Cinegang/images/our-services-hero.jpg')] bg-cover aspect-video flex flex-col items-center justify-center max-h-[1080px] gap-4 lg:gap-6">
+      <div className="w-full bg-[url('https://whyal.github.io/Cinegang/images/servicesHero.png')] bg-cover aspect-video flex flex-col items-center justify-center max-h-[1080px] gap-4 lg:gap-6">
         <h1 className="text-4xl font-bold lg:text-6xl">
           Our <span className="text-[#ff4343]">Services</span>
         </h1>
@@ -33,36 +84,8 @@ const OurServices = () => {
             <Carousel descriptions={new Array("1", "2", "3")} />
           </div>
           <div className="grid grid-cols-2 gap-4 my-4 mx-auto md:w-4/5 lg:grid-cols-3 xl:w-3/4 2xl:gap-x-20">
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/TVC.svg"
-              heading="TVC"
-              desc="Brief, persuasive messages designed to promote brands, production or services through impactful storytelling and engaging visuals."
-            />
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/Corporate.svg"
-              heading="Corporate"
-              desc="Professional audiovisual presentations for businesses, delivering brand messages, showcasing products, and enhancing communication."
-            />
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/Events.svg"
-              heading="Events"
-              desc="Capturing and documenting live events through video, preserving the essence, highlights, and key moments for future viewing and distribution."
-            />
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/Editing.svg"
-              heading="Editing"
-              desc="Assembly and manipulation of video footage, audio, and visual elements to create a compelling final product for storytelling, entertainment, or promotional content."
-            />
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/2D.svg"
-              heading="2D"
-              desc="Create visually engaging illustrations and animations using 2D mediums, perfect for bringing your infographics and mixed media ideas to life!"
-            />
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/3D.svg"
-              heading="3D"
-              desc="Create immersive and lifelike visual experiences through the crafting of 3D objects, characters, and environments using digital tools and techniques."
-            />
+            {videoProduction &&
+              videoProduction.map((ele) => <Snippets {...ele} />)}
           </div>
         </section>
         <section>
@@ -76,21 +99,7 @@ const OurServices = () => {
             <Carousel descriptions={new Array("1", "2", "3")} />
           </div>
           <div className="grid grid-cols-2 gap-4 my-4 mx-auto md:w-4/5 lg:grid-cols-3 xl:w-3/4 2xl:gap-x-20">
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/Product.svg"
-              heading="Product"
-              desc="Brief, persuasive messages designed to promote brands, production or services through impactful storytelling and engaging visuals."
-            />
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/Portrait.svg"
-              heading="Portrait"
-              desc="Brief, persuasive messages designed to promote brands, production or services through impactful storytelling and engaging visuals."
-            />
-            <Snippets
-              imageUrl="https://whyal.github.io/Cinegang/icons/Events.svg"
-              heading="Events"
-              desc="Brief, persuasive messages designed to promote brands, production or services through impactful storytelling and engaging visuals."
-            />
+            {photography && photography.map((ele) => <Snippets {...ele} />)}
           </div>
         </section>
       </div>

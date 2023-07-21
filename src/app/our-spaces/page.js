@@ -3,50 +3,56 @@ import Carousel from "@/components/Carousel";
 const OurSpaces = () => {
   const studioDescriptions = [
     {
-      title: "Spacious",
-      captions:
+      ImageName: "studio1",
+      Title: "Spacious",
+      Captions:
         "Boasting dimensions of 4.4m x 4.6m x 3.3m,  Studio Noir ensures a comfortable and spacious environment for your creative endeavors.",
     },
     {
-      title: "Equipped",
-      captions:
-        "Leave your heavy equipment behind! Studio Noir comes equipped with 3 Aputure Nova P300C (Ceiling Mounted - Facing Cyclorama Wall), 3 Aputure LS 300X and 5 C-stands to help with your production.",
+      ImageName: "studio2",
+      Title: "Equipped",
+      Captions:
+        "Leave your heavy equipment behind! Studio Noir comes equipped to help with your production. Click here to view the equipment available",
     },
     {
-      title: "Unwind",
-      captions:
+      ImageName: "studio3",
+      Title: "Unwind",
+      Captions:
         "As media professionals, we recognise the demands of extensive shoots. That's why Studio Noir is equipped with a dressing room and pantry (free flow drinks & snack bar),allowing you to relax during breaktime.",
     },
   ];
-
   const poolDescriptions = [
     {
-      title: "Scenic",
-      captions:
+      ImageName: "swimmingpool1",
+      Title: "Scenic",
+      Captions:
         "Our outdoor swimming pool is a picturesque filming space exuding staycation vibes. With lounge chairs, greenery, hardwood floors, and a pristine rectangular pool, it offers an idyllic backdrop for tranquil retreats, vibrant pool parties, and serene summer scenes.",
     },
     {
-      title: "Tranquil",
-      captions:
+      ImageName: "swimmingpool2",
+      Title: "Tranquil",
+      Captions:
         "Experience uninterrupted shoots at our quiet pool, where the serene atmosphere and limited occupancy create an optimal environment for capturing your shots.",
     },
   ];
   const courtDescriptions = [
     {
-      title: "Convenience",
-      captions:
+      ImageName: "basketball1",
+      Title: "Convenience",
+      Captions:
         "Looking for a prime location to shoot your sports scenes? Take advantage of our office's close proximity to a full-sized basketball court, complete with two rims.",
     },
     {
-      title: "Tranquil",
-      captions:
+      ImageName: "basketball2",
+      Title: "Tranquil",
+      Captions:
         "In addition to its short distance from our office, the basketball court is a serene and seldom-used setting, providing the perfect opportunity to capture your shots without any distractions.",
     },
   ];
 
   return (
     <div className="w-full mb-24">
-      <div className="w-full bg-[url('https://whyal.github.io/Cinegang/images/our-spaces-hero.png')] bg-cover aspect-video flex flex-col items-center justify-center max-h-[1080px] gap-4 lg:gap-6">
+      <div className="w-full bg-[url('https://whyal.github.io/Cinegang/images/spacesHero.png')] bg-cover aspect-video flex flex-col items-center justify-center max-h-[1080px] gap-4 lg:gap-6">
         <h1 className="text-4xl font-bold lg:text-6xl">
           Our <span className="text-[#ff4343]">Spaces</span>
         </h1>
@@ -65,7 +71,7 @@ const OurSpaces = () => {
           Studio <span className="text-[#ff4343]">Noir</span>
         </h1>
         <div className="w-full max-w-[1200px] mx-auto my-8 md:w-4/5 xl:w-3/4">
-          <Carousel descriptions={studioDescriptions} small={false} />
+          <Carousel descriptions={studioDescriptions} />
         </div>
         <div className="w-full grid grid-cols-2 lg:flex lg:w-3/4 mx-auto lg:my-8 splitter text-[#b2b2b2] text-sm md:text-md lg:text-lg">
           <div className="grow text-center p-8">

@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
+import Modal from "@/components/PortfolioModal";
 const About = () => {
+  const [activeIndex, setActiveIndex] = useState(-1);
   return (
     <div className="w-full">
       <div className="w-full flex flex-col gap-4 items-center py-16 bg-[#2d2d2d] lg:gap-8 lg:py-36">
@@ -45,6 +50,11 @@ const About = () => {
               fill
               className="object-cover"
               alt="portfolioImg"
+              onClick={() => setActiveIndex(0)}
+            />
+            <Modal
+              isActive={activeIndex === 0}
+              onClose={() => setActiveIndex(-1)}
             />
           </div>
           <div className="aspect-video relative border-4 border-[##ffffff]">
@@ -53,134 +63,11 @@ const About = () => {
               fill
               className="object-cover"
               alt="portfolioImg"
+              onClick={() => setActiveIndex(1)}
             />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
+            <Modal
+              isActive={activeIndex === 1}
+              onClose={() => setActiveIndex(-1)}
             />
           </div>
         </div>

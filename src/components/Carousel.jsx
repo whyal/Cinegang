@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
-const Carousel = ({ descriptions, small }) => {
+const Carousel = ({ descriptions, small=false }) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [emblaRef, emblaApi] = useEmblaCarousel();
 
@@ -37,11 +37,7 @@ const Carousel = ({ descriptions, small }) => {
       <div className={`${!small ? "w-full" : "w-full lg:w-2/3"} relative`}>
         <div className="overflow-hidden border-solid border-2 border-[#f43f3f]" ref={emblaRef}>
           <div className="flex">
-            {descriptions && descriptions.map((_, i) => 
-              <div className="flex-[0_0_100%] min-w-0 relative max-h-[1080px] aspect-video" key={i}>
-                Slide{i+1}
-              </div>
-            )}
+            {descriptions && descriptions.map((description) => <div className="flex-[0_0_100%] min-w-0 relative max-h-[1080px] aspect-video" fill><Image alt={description.ImageName} src={`https://whyal.github.io/Cinegang/images/spaces/${description.ImageName}.jpeg`} fill className="object-contain"/></div>)}
           </div>
         </div>
 
@@ -53,6 +49,7 @@ const Carousel = ({ descriptions, small }) => {
             src="https://whyal.github.io/Cinegang/icons/chevron-left-solid.svg"
             fill
             className="object-contain"
+            alt="left-arrow"
           />
         </button>
 
@@ -64,15 +61,16 @@ const Carousel = ({ descriptions, small }) => {
             src="https://whyal.github.io/Cinegang/icons/chevron-right-solid.svg"
             fill
             className="object-contain"
+            alt="right-arrow"
           />
         </button>
       </div>
-      {descriptions[slideIndex].title && (
+      {descriptions[slideIndex].Title && (
         <div style={{backgroundColor: "#2d2d2d"}} className={`${!small ? "w-full mt-8" : "w-full lg:w-[30%] ml-auto mt-8 lg:mt-0"} py-4 px-6`}>
           <h2 className="text-md lg:text-lg xl:text-xl border-b-2 border-[#f43f3f] w-max">
-            {descriptions[slideIndex].title}
+            {descriptions[slideIndex].Title}
           </h2>
-          <p className="text-sm lg:text-md xl:text-lg">{descriptions[slideIndex].captions}</p>
+          <p className="text-sm lg:text-md xl:text-lg">{descriptions[slideIndex].Captions}</p>
         </div>
       )}
     </div>

@@ -20,7 +20,7 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 src="https://whyal.github.io/Cinegang/icons/cineganglogo.svg"
-                alt="CinegangTV logo"
+                alt="Cinegang logo"
                 fill
                 className="object-contain"
               />
@@ -43,25 +43,25 @@ const Navbar = () => {
         >
           <Link
             href="/portfolio"
-            className="cursor-pointer py-2 border-b-2 border-transparent hover:border-[#f43f3f]"
+            className="cursor-pointer mx-8 py-2 border-b-2 border-transparent hover:border-[#f43f3f]"
           >
             Portfolio
           </Link>
           <Link
             href="/our-services"
-            className="cursor-pointer py-2 border-b-2 border-transparent hover:border-[#f43f3f]"
+            className="cursor-pointer mx-8 py-2 border-b-2 border-transparent hover:border-[#f43f3f]"
           >
             Our Services
           </Link>
           <Link
             href="/our-spaces"
-            className="cursor-pointer py-2 border-b-2 border-transparent hover:border-[#f43f3f]"
+            className="cursor-pointer mx-8 py-2 border-b-2 border-transparent hover:border-[#f43f3f]"
           >
             Our Spaces
           </Link>
           <Link
             href="/contact-us"
-            className="cursor-pointer py-2 border-b-2 border-transparent hover:border-[#f43f3f]"
+            className="cursor-pointer mx-8 py-2 border-b-2 border-transparent hover:border-[#f43f3f]"
           >
             Contact Us
           </Link>
