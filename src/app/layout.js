@@ -10,8 +10,8 @@ const myFont = localFont({
 });
 
 export const metadata = {
-  title: "CinegangTV",
-  description: "Something else later on",
+  title: "CinegangSG",
+  description: "Lights, Camera, Cinegang!",
 };
 
 export default function RootLayout({ children }) {

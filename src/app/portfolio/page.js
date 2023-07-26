@@ -77,13 +77,13 @@ const About = () => {
         <h1 className="text-4xl lg:text-6xl font-bold">
           Our <span className="text-[#ff4343]">Portfolio</span>
         </h1>
-        <div className="flex flex-wrap gap-2 text-sm lg:text-2xl text-[#b2b2b2] splitter2">
+        {/* <div className="flex flex-wrap gap-2 text-sm lg:text-2xl text-[#b2b2b2] splitter2">
           <h3 className="pr-4">Entertainment</h3>
           <h3 className="pr-4">Comercials</h3>
           <h3 className="pr-4">Corporate</h3>
           <h3 className="pr-4">Animations</h3>
           <h3 className="pr-4">Design</h3>
-        </div>
+        </div> */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3">
         {videos &&
             videos.map((video, i) => (
