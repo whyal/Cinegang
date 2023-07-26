@@ -16,10 +16,10 @@ const Navbar = () => {
     <div className="w-full fixed top-0 z-10 bg-[#000000]">
       <div className="w-screen h-[100px] lg:h-[150px] flex flex-col mx-auto py-4 justify-center items-center lg:flex-row lg:w-3/4 lg:justify-between">
         <div className="w-full flex justify-between px-4 cursor-pointer lg:w-1/2">
-          <div className="relative w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]">
+          <div className="relative w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]">
             <Link href="/">
               <Image
-                src="/icons/cineganglogo.png"
+                src="/icons/cineganglogo.svg"
                 alt="Cinegang logo"
                 fill
                 className="object-contain"

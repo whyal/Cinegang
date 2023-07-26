@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="/icons/cineganglogo.png"
+          href="/icons/cineganglogo.svg"
         />
       </head>
       <body
