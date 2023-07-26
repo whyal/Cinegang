@@ -5,6 +5,44 @@ import Image from "next/image";
 import { useState } from "react";
 import Modal from "@/components/PortfolioModal";
 const About = () => {
+  const videos = [
+    {
+      Title: "$50 v $500",
+      src: "https://www.youtube.com/embed/YUxDFn6rFeM",
+    },
+    {
+      Title: "99 Singaporeans",
+      src: "https://www.youtube.com/embed/LLfn3rgcS0c",
+    },
+    {
+      Title: "Are We Our True Selves Around Parents",
+      src: "https://www.youtube.com/embed/bkOgP1MEpYg",
+    },
+    {
+      Title: "Hired Or Fired",
+      src: "https://www.youtube.com/embed/-zn4-KoI1SE",
+    },
+    {
+      Title: "Lost Touch Ep 1",
+      src: "https://www.youtube.com/embed/tXKVweQY3A0",
+    },
+    {
+      Title: "RunSohFast",
+      src: "https://www.youtube.com/embed/ZGOwSZzWOZw",
+    },
+    {
+      Title: "Singaporeans Try 48 Hours In Paris",
+      src: "https://www.youtube.com/embed/_zl_unXmoeQ",
+    },
+    {
+      Title: "TENG Recap 2022",
+      src: "https://www.youtube.com/embed/ynR1R8c02HM",
+    },
+    {
+      Title: "We Attended A Secret Event In London",
+      src: "https://www.youtube.com/embed/8N4Og558oQ8",
+    },
+  ];
   const [activeIndex, setActiveIndex] = useState(-1);
   return (
     <div className="w-full">
@@ -16,10 +54,13 @@ const About = () => {
           A compilation of our best works.
         </h3>
         <video
-          src="https://whyal.github.io/Cinegang/videos/portfolio-video.mp4"
-          type="video/mp4"
+          controls
           className="w-11/12 border-2 border-[#ff4343] lg:w-3/4 xl:max-w-screen-2xl"
-        ></video>
+          autoPlay
+          muted={false}
+        >
+          <source src="videos/Showreel.mp4" type="video/mp4" />
+        </video>
         <div className="flex gap-2">
           <button className="text-sm bg-[#000000] py-3 px-6 hover:bg-[#46474a] lg:py-4 lg:px-10">
             <Link href="/our-services">View Our Services</Link>
@@ -44,32 +85,26 @@ const About = () => {
           <h3 className="pr-4">Design</h3>
         </div>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3">
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-              onClick={() => setActiveIndex(0)}
-            />
-            <Modal
-              isActive={activeIndex === 0}
-              onClose={() => setActiveIndex(-1)}
-            />
-          </div>
-          <div className="aspect-video relative border-4 border-[##ffffff]">
-            <Image
-              src="https://whyal.github.io/Cinegang/images/portfolio-img1.jpg"
-              fill
-              className="object-cover"
-              alt="portfolioImg"
-              onClick={() => setActiveIndex(1)}
-            />
-            <Modal
-              isActive={activeIndex === 1}
-              onClose={() => setActiveIndex(-1)}
-            />
-          </div>
+        {videos &&
+            videos.map((video, i) => (
+              <div
+                className="aspect-video relative border-4 border-[##ffffff]"
+                key={i}
+              >
+                <Image
+                  src={`/images/${video.Title}.webp`}
+                  fill
+                  className="object-cover"
+                  alt={video.Title}
+                  onClick={() => setActiveIndex(i)}
+                />
+                <Modal
+                  isActive={activeIndex === i}
+                  onClose={() => setActiveIndex(-1)}
+                  src={video.src}
+                />
+              </div>
+            ))}
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ const Hero = () => {
     <div className="w-full h-screen text-[#ffffff] relative md:h-[1080px]">
       <video
         className="w-full h-full object-cover"
-        src="https://whyal.github.io/Cinegang/videos/heroVideo.mp4"
+        src="/videos/heroVideo.mp4"
         autoPlay
         loop
         muted

@@ -37,7 +37,7 @@ const Carousel = ({ descriptions, small=false }) => {
       <div className={`${!small ? "w-full" : "w-full lg:w-2/3"} relative`}>
         <div className="overflow-hidden border-solid border-2 border-[#f43f3f]" ref={emblaRef}>
           <div className="flex">
-            {descriptions && descriptions.map((description) => <div className="flex-[0_0_100%] min-w-0 relative max-h-[1080px] aspect-video" fill><Image alt={description.ImageName} src={`https://whyal.github.io/Cinegang/images/spaces/${description.ImageName}.jpeg`} fill className="object-contain"/></div>)}
+            {descriptions && descriptions.map((description) => <div className="flex-[0_0_100%] min-w-0 relative max-h-[1080px] aspect-video" fill><Image alt={description.ImageName} src={`/images/spaces/${description.ImageName}.jpeg`} fill className="object-contain"/></div>)}
           </div>
         </div>
 
@@ -46,7 +46,7 @@ const Carousel = ({ descriptions, small=false }) => {
           onClick={scrollPrev}
         >
           <Image
-            src="https://whyal.github.io/Cinegang/icons/chevron-left-solid.svg"
+            src="/icons/chevron-left-solid.svg"
             fill
             className="object-contain"
             alt="left-arrow"
@@ -58,7 +58,7 @@ const Carousel = ({ descriptions, small=false }) => {
           onClick={scrollNext}
         >
           <Image
-            src="https://whyal.github.io/Cinegang/icons/chevron-right-solid.svg"
+            src="/icons/chevron-right-solid.svg"
             fill
             className="object-contain"
             alt="right-arrow"

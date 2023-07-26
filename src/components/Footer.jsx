@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="w-full flex gap-4">
             <a href="https://www.youtube.com" target="_blank">
               <Image
-                src="https://whyal.github.io/Cinegang/icons/social/instagram.svg"
+                src="/icons/social/instagram.svg"
                 alt="Instagram Logo"
                 width={30}
                 height={30}
@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
             <a href="https://www.tiktok.com" target="_blank">
               <Image
-                src="https://whyal.github.io/Cinegang/icons/social/tiktok.svg"
+                src="/icons/social/tiktok.svg"
                 alt="TikTok Logo"
                 width={30}
                 height={30}
@@ -47,7 +47,7 @@ const Footer = () => {
             </a>
             <a href="https://www.facebook.com" target="_blank">
               <Image
-                src="https://whyal.github.io/Cinegang/icons/social/facebook.svg"
+                src="/icons/social/facebook.svg"
                 alt="Facebook Logo"
                 width={20}
                 height={20}

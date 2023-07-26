@@ -56,7 +56,7 @@ const OurServices = () => {
 
   return (
     <div className="w-full mb-24">
-      <div className="w-full bg-[url('https://whyal.github.io/Cinegang/images/servicesHero.png')] bg-cover aspect-video flex flex-col items-center justify-center max-h-[1080px] gap-4 lg:gap-6">
+      <div className="w-full bg-[url('/images/servicesHero.png')] bg-cover aspect-video flex flex-col items-center justify-center max-h-[1080px] gap-4 lg:gap-6">
         <h1 className="text-4xl font-bold lg:text-6xl">
           Our <span className="text-[#ff4343]">Services</span>
         </h1>
@@ -81,7 +81,7 @@ const OurServices = () => {
             Weave your story into visual magic through our lenses
           </h3>
           <div className="w-full mx-auto my-8 md:w-4/5 xl:w-3/4 2xl:w-1/2">
-            <Carousel descriptions={new Array("1", "2", "3")} />
+            {/* <Carousel descriptions={new Array("1", "2", "3")} /> */}
           </div>
           <div className="grid grid-cols-2 gap-4 my-4 mx-auto md:w-4/5 lg:grid-cols-3 xl:w-3/4 2xl:gap-x-20">
             {videoProduction &&
@@ -96,7 +96,7 @@ const OurServices = () => {
             Capture captivating moments, tell timeless stories
           </h3>
           <div className="w-full mx-auto md:w-4/5 xl:w-3/4 2xl:w-1/2">
-            <Carousel descriptions={new Array("1", "2", "3")} />
+            {/* <Carousel descriptions={new Array("1", "2", "3")} /> */}
           </div>
           <div className="grid grid-cols-2 gap-4 my-4 mx-auto md:w-4/5 lg:grid-cols-3 xl:w-3/4 2xl:gap-x-20">
             {photography && photography.map((ele) => <Snippets {...ele} />)}

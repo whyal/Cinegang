@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="https://whyal.github.io/Cinegang/icons/cineganglogo.svg"
+          href="/icons/cineganglogo.svg"
         />
       </head>
       <body

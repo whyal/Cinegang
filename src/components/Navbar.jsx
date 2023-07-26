@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="relative w-[50px] h-[50px] lg:w-[80px] lg:h-[80px]">
             <Link href="/">
               <Image
-                src="https://whyal.github.io/Cinegang/icons/cineganglogo.svg"
+                src="/icons/cineganglogo.svg"
                 alt="Cinegang logo"
                 fill
                 className="object-contain"
